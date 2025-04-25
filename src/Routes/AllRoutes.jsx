@@ -1,14 +1,13 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
-import ProtectedRoute from "./ProtectedRoute";
-
+import { Routes, Route } from "react-router-dom";
+import { Dashboard } from "../Pages/Dashboard";
+import { Chat } from "../Pages/Chat";
 
 export const AllRoutes = () => {
-
-
   return (
     <Routes>
-      {/* <Route path="*" element={<PageNotFound />} /> */}
+      <Route path="/" element={<Dashboard />} />
+      <Route path="/chat" element={<Chat />} />
     </Routes>
   );
 };

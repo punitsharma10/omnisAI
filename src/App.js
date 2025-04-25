@@ -1,13 +1,14 @@
-import { Button } from "@chakra-ui/react";
+import { Layout } from "./Layout/Layout";
+import { Toaster } from "react-hot-toast";
 import "./App.css";
-import { useTheme } from "next-themes";
 
 function App() {
-  const { resolvedTheme, setTheme } = useTheme()
-  setTheme("light")
-    return (
-    <>
 
+  
+  return (
+    <>
+      <Layout />
+      <Toaster />
     </>
   );
 }
